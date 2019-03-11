@@ -1,4 +1,4 @@
-# AWSSESDemo
+# AWS SES Demo with HTTPS Endpoint
 
 What are we trying to do: Setup a simple HTTPS endpoint that takes Destination email address and an OTP and sends the email with OTP.
 
