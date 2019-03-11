@@ -90,5 +90,6 @@ Test your end point
   --request POST \
   --data '{"email":"your_verified_email_id","otp":"1234"}' \
  https://{your_aws_end_point}/dev/email/send
+ ````
  
- Done. Have a beer.
+ ## Done. Have a beer.
