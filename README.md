@@ -93,3 +93,6 @@ Test your end point
  ````
  
  ## Done. Have a beer.
+
+I have ingested a lot of tutorials from web to build this. Credit to the most useful tutorial
+https://dev.to/adnanrahic/building-a-serverless-contact-form-with-aws-lambda-and-aws-ses-4jm0
