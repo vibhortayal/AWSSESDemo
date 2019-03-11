@@ -1,4 +1,4 @@
-service: contact-form-api
+service: otp-sender
 
 custom:
   secrets: ${file(secrets.json)}
