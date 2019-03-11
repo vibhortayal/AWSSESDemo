@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "OTPTemplateEnglish",
+    "SubjectPart": "Your OTP password",
+    "HtmlPart": "<h1>Hello,</h1><p>Your OTP password is {{otp}}.</p>",
+    "TextPart": "Your OTP password is {{otp}}."
+  }
+}
