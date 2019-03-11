@@ -1,6 +1,6 @@
 # AWS SES Demo with HTTPS Endpoint
 
-What are we trying to do: Setup a simple HTTPS endpoint that takes Destination email address and an OTP and sends the email with OTP.
+What are we trying to do: Setup a simple HTTPS endpoint that takes a destination email address and an OTP and sends the email with OTP.
 
 ## Basic Steps
 1. Configure AWS SES
