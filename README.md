@@ -62,4 +62,33 @@ The SES setup is completed. Now we move to a HTTPS endpoint using AWS Lambda and
 `$ npm i -g serverless`
 
 2. Create a service
+`serverless create --template aws-nodejs --path otp-sender`
 
+This will create boiler plate code for you. Navigate to otp-sender directory.
+
+Copy and overwrite contents from serverless.yml and handler.js from repository.
+
+3. Add the secrets file.
+```
+{
+  "NODE_ENV":"dev",
+  "EMAIL":"your_verified_email_id",
+  "DOMAIN":"*"
+}
+````
+
+## Deploy the API to AWS Lambda
+Just this
+`$ serverless deploy`
+
+Logs on the console will give you the endpoint.
+
+Test your end point 
+
+````
+  curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"email":"your_verified_email_id","otp":"1234"}' \
+ https://{your_aws_end_point}/dev/email/send
+ 
+ Done. Have a beer.
