@@ -35,7 +35,7 @@ Easiest way is using pip
 2. At the command line, type the following command to create a new template using the CreateTemplate API operation: 
 `aws ses create-template --cli-input-json file://mytemplate.json`
 
-Note: use aws ses create-template --cli-input-json file://mytemplate.json` to update template in future
+Note: To update template in future - use `aws ses create-template --cli-input-json file://mytemplate.json` 
 
 3. Test your template using CLI. Create an test email json file - save it as it "myemail.json"
 
