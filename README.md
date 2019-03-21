@@ -23,6 +23,9 @@ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 ```
+Verify that the AWS CLI installed correctly by running aws --version.
+
+```$ aws --version```
 
 2. Configure AWS command line by following steps here - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#cli-quick-configuration
 
