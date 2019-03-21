@@ -12,15 +12,16 @@ What are we trying to do: Setup a simple HTTPS endpoint that takes a destination
 2. AWS Lamda with API Gateway. We will be using Serverless for our development- https://serverless.com/
 
 ## Prerequisite: 
-1. Verify your email via SES. This is fairly easy and GUI driven - https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html
-
-2. Setup AWS command Line - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+1. Setup AWS command Line - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 Easiest way is using pip
 
 `pip install awscl`
+2. Configure AWS command line by following steps here - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#cli-quick-configuration
 
 ## Configure AWS SES
-1. We will be using AWS CLI to create an Email Template - You can use mytemplate.json for reference
+1. Verify your email via SES. This is fairly easy and GUI driven - https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html
+
+2. We will be using AWS CLI to create an Email Template - You can use mytemplate.json for reference
 
 ```
 {
@@ -32,12 +33,12 @@ Easiest way is using pip
   }
 }
 ```
-2. At the command line, type the following command to create a new template using the CreateTemplate API operation: 
+3. At the command line, type the following command to create a new template using the CreateTemplate API operation: 
 `aws ses create-template --cli-input-json file://mytemplate.json`
 
 Note: To update template in future - use `aws ses create-template --cli-input-json file://mytemplate.json` 
 
-3. Test your template using CLI. Create an test email json file - save it as it "myemail.json"
+4. Test your template using CLI. Create an test email json file - save it as it "myemail.json"
 
 ````
 {
@@ -50,7 +51,7 @@ Note: To update template in future - use `aws ses create-template --cli-input-js
   "TemplateData": "{ \"otp\":\"1234\"}"
 }
 ````
-4. At the command line, type the following command to send the email:
+5. At the command line, type the following command to send the email:
 
 ````aws ses send-templated-email --cli-input-json file://myemail.json````
 
