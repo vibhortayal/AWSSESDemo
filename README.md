@@ -16,6 +16,14 @@ What are we trying to do: Setup a simple HTTPS endpoint that takes a destination
 Easiest way is using pip
 
 `pip install awscl`
+
+Alternatively, you can use bundled installers using following commands (on Mac)
+```
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+```
+
 2. Configure AWS command line by following steps here - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#cli-quick-configuration
 
 ## Configure AWS SES
